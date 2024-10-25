@@ -4,9 +4,9 @@ import React from 'react';
 const projects = [
     {
       id: 1,
-      title: 'Projet 1',
+      title: 'Booki',
       description: 'Description du projet 1',
-      link: 'https://github.com/monrepo/projet1'
+      link: 'https://clemmc.github.io/P3-Booki/'
     },
 
   ];

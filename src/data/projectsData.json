@@ -1,0 +1,20 @@
+[
+    {
+        "logo": "url-to-portfolio-logo.png",
+        "category": "Web Development",
+        "title": "Mon Portfolio",
+        "link": "https://monportfolio.com"
+    },
+    {
+        "logo": "url-to-banking-app-logo.png",
+        "category": "Front-end Development",
+        "title": "Application Bancaire",
+        "link": "https://appbancaire.com"
+    },
+    {
+        "logo": "url-to-724events-logo.png",
+        "category": "Bug Fixing",
+        "title": "724events",
+        "link": "https://724events.com"
+    }
+]

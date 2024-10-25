@@ -19,7 +19,9 @@ const Home = () => {
         />
         <div className="text">
           <h2>Qui suis-je ?</h2>
-          <p>Je suis un développeur web passionné par la création de sites modernes et fonctionnels, en constante évolution.</p>
+          <p>Je suis Clément Metral, un développeur web en formation, passionné par la création de sites et d'applications. 
+            J'ai appris à utiliser HTML, CSS, JavaScript et React, et je suis actuellement en train de travailler sur un projet 
+            de portfolio.</p>
         </div>
       </section>
     </>
