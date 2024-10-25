@@ -1,0 +1,51 @@
+@import './variables';
+@import './mixins';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 19%;
+    background-color: $primary-color;
+
+    img {
+        width: 150px;
+        height: auto;
+
+        @media (max-width: 730px) {
+            width: 100px; // Réduire la taille de l'image sur mobile
+        }
+    }
+
+    nav {
+        a {
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: $tertiary-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    // Media queries pour la version mobile
+    @media (max-width: 730px) {
+        flex-direction: column; // Empiler les éléments verticalement
+        align-items: center; // Centre les éléments
+
+        padding: 0.6rem; // Réduire le rembourrage
+
+        nav {
+            margin-top: 1rem; // Ajouter un espace au-dessus de la navigation
+            display: flex;
+            flex-direction: column; // Aligner les liens verticalement
+            align-items: center; // Centre les liens
+
+            a {
+                margin: 0.5rem 0; // Ajuster l'espacement entre les liens
+            }
+        }
+    }
+}

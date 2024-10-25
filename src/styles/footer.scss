@@ -1,0 +1,99 @@
+@import './variables';
+@import './mixins';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.footer {
+    background-color: $primary-color;
+    color: $tertiary-color;
+    padding: 2rem 19%;
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .footer-section {
+            flex: 1;
+            margin-right: 2rem;
+
+            h2, h3 {
+                color: $tertiary-color;
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 0.5rem;
+
+                    a {
+                        color: $tertiary-color;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                font-size: 1.5rem;
+                color: $secondary-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: lighten($secondary-color, 10%);
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 0.9rem;
+        border-top: 1px solid darken($primary-color, 10%);
+        padding-top: 1rem;
+
+        a {
+            color: $tertiary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Media queries for mobile responsiveness
+    @media (max-width: 768px) {
+        padding: 1rem;
+
+        .footer-content {
+            flex-direction: column; // Stack sections vertically
+            align-items: center; // Center-align the content
+
+            .footer-section {
+                margin-right: 0; // Remove right margin
+                margin-bottom: 1rem; // Add bottom margin for spacing
+            }
+
+            .social {
+                justify-content: center; // Center social icons
+                margin-top: 1rem; // Add spacing above
+            }
+        }
+
+        .footer-bottom {
+            font-size: 0.8rem; // Reduce font size for better fit
+        }
+    }
+}
