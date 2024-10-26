@@ -1,37 +1,24 @@
-
 import React from 'react';
+import Card from '../components/Card';
+import Data from '../components/Data';
+import '../styles/projects.scss';
 
-const projects = [
-    {
-      id: 1,
-      title: 'Booki',
-      description: 'Description du projet 1',
-      link: 'https://clemmc.github.io/P3-Booki/'
-    },
-
-  ];
-  
-
-  const Projects = () => {
+const ProjectsPage = () => {
     return (
-        <>
-            <section className="header-continuity">
-                <h1>Mes Projets</h1>
-                <h2 className="subtitle">Découvrez mes réalisations</h2>
-            </section>
-            <section id="projects">
-                <div className="projects-section">
-                    {projects.map((project) => (
-                        <div key={project.id} className="project-card">
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                            <a href={project.link}>Voir le projet</a>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </>
+        <div className="projects-page">
+            <div className="card-container"> {/* Ajouté ici */}
+                {Data.map((project, index) => (
+                    <Card 
+                        key={index} 
+                        logo={project.logo} 
+                        category={project.category} 
+                        Description={project.Description} 
+                        link={project.link} 
+                    />
+                ))}
+            </div>
+        </div>
     );
 };
 
-export default Projects;
+export default ProjectsPage;

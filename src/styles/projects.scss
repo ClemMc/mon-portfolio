@@ -1,0 +1,24 @@
+.projects-page {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre le contenu horizontalement */
+    padding: 16px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Trois colonnes de largeur égale */
+    gap: 20px; /* Espace entre les cartes */
+    width: 100%; /* Assure que le conteneur prenne toute la largeur disponible */
+    max-width: 1200px; /* Limite la largeur pour éviter des étirements sur de grands écrans */
+
+    @media (max-width: 768px) { // Pour les écrans de 768px et moins
+        grid-template-columns: repeat(2, 1fr); // Deux colonnes
+        gap: 15px; // Réduire l'espace entre les cartes
+    }
+
+    @media (max-width: 480px) { // Pour les écrans de 480px et moins
+        grid-template-columns: 1fr; // Une seule colonne
+        gap: 10px; // Réduire encore l'espace
+    }
+}
