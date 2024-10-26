@@ -4,66 +4,66 @@
 .card {
     position: relative;
     cursor: pointer;
-    width: 500px; /* Taille par défaut */
-    height: 200px; /* Taille par défaut */
+    width: 500px;
+    height: 200px;
     transition: transform 0.2s;
-    border: none; /* Supprimer la bordure */
-    margin: 10px; /* Ajouter un peu d'espace autour de chaque carte */
+    border: none;
+    margin: 10px;
 
     &:hover {
-        transform: scale(1.05); /* Effet de zoom au survol */
+        transform: scale(1.05);
     }
 
     .card-logo {
-        width: 200px; /* Réduire la taille du logo */
-        height: auto; /* Laisser le ratio d'aspect */
-        object-fit: contain; /* Pour garder le logo visible */
-        border-radius: 4px; /* Arrondir légèrement le logo */
-        margin: 10px auto; /* Centrer le logo horizontalement */
+        width: 200px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 4px;
+        margin: 10px auto;
         display: block;
     }
 
     .card-info {
-        padding: 10px; /* Ajout de padding autour des infos */
-        text-align: center; /* Centrer le texte */
-        color: #333333; /* Changer la couleur du texte pour un meilleur contraste */
+        padding: 10px;
+        text-align: center;
+        color: #333333;
 
         .card-category {
-            background-color: rgba(0, 0, 0, 0.1); /* Fond pour le tag */
-            color: $secondary-color; /* Couleur du tag */
-            padding: 4px 8px; /* Padding autour du tag */
-            border-radius: 4px; /* Arrondir les coins du tag */
-            font-size: 12px; /* Augmenter légèrement la taille de la police */
-            margin-bottom: 4px; /* Espacement en bas du tag */
+            background-color: rgba(0, 0, 0, 0.1);
+            color: $secondary-color;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 4px;
             display: inline-block;
 
-            @media (max-width: 480px) { // Ajuster pour les petits écrans
-                font-size: 10px; // Réduire la taille de la police
+            @media (max-width: 480px) {
+                font-size: 10px;
             }
         }
 
         .card-description {
-            font-size: 12px; /* Ajuste la taille de la police */
-            margin-top: 4px; /* Espacement en haut de la description */
-            max-width: auto; /* Limiter la largeur de la description */
-            line-height: 1.5; /* Ajuste l'espacement entre les lignes pour une meilleure lisibilité */
-            color: $primary-color; /* Couleur de la description pour un meilleur contraste */
+            font-size: 12px;
+            margin-top: 4px;
+            max-width: auto;
+            line-height: 1.5;
+            color: $primary-color;
             
             @media (max-width: 480px) {
-                font-size: 10px; // Réduire la taille de la police pour les petits écrans
+                font-size: 10px;
             }
         }
         
     }
 
-    @media (max-width: 768px) { // Ajustements pour les écrans de 768px et moins
-        width: 90%; /* Adapter la largeur de la carte à 90% de l'écran */
-        height: auto; /* Hauteur automatique pour un meilleur ajustement */
+    @media (max-width: 768px) {
+        width: 90%;
+        height: auto;
     }
 
-    @media (max-width: 480px) { // Ajustements pour les écrans de 480px et moins
-        width: 100%; /* Adapter la largeur de la carte à 100% de l'écran */
-        height: auto; /* Hauteur automatique pour un meilleur ajustement */
-        padding: 10px; /* Ajout de padding pour le confort de lecture */
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+        padding: 10px;
     }
 }

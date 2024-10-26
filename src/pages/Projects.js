@@ -6,7 +6,7 @@ import '../styles/projects.scss';
 const ProjectsPage = () => {
     return (
         <div className="projects-page">
-            <div className="card-container"> {/* Ajouté ici */}
+            <div className="card-container">
                 {Data.map((project, index) => (
                     <Card 
                         key={index} 

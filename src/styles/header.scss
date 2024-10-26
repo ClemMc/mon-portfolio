@@ -13,7 +13,7 @@
         height: auto;
 
         @media (max-width: 730px) {
-            width: 100px; // Réduire la taille de l'image sur mobile
+            width: 100px;
         }
     }
 
@@ -30,21 +30,20 @@
         }
     }
 
-    // Media queries pour la version mobile
     @media (max-width: 730px) {
-        flex-direction: column; // Empiler les éléments verticalement
-        align-items: center; // Centre les éléments
+        flex-direction: column;
+        align-items: center;
 
-        padding: 0.6rem; // Réduire le rembourrage
+        padding: 0.6rem;
 
         nav {
-            margin-top: 1rem; // Ajouter un espace au-dessus de la navigation
+            margin-top: 1rem;
             display: flex;
-            flex-direction: column; // Aligner les liens verticalement
-            align-items: center; // Centre les liens
+            flex-direction: column;
+            align-items: center;
 
             a {
-                margin: 0.5rem 0; // Ajuster l'espacement entre les liens
+                margin: 0.5rem 0;
             }
         }
     }

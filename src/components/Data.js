@@ -1,6 +1,7 @@
 import BookiLogo from '../assets/BookiLogo.png';
 import OhmyfoodLogo from '../assets/ohmyfood.png';
 import SophieBluelLogo from '../assets/SophieBluelLogo.png';
+import KasaLogo from '../assets/KasaLogo.png';
 
 const projectsData = [
     {
@@ -25,17 +26,13 @@ const projectsData = [
         link: 'https://724events.com'
     },
     {
-        logo: 'url-to-724events-logo.png', 
-        category: 'Bug Fixing',
-        Title: '724events',
+        logo: KasaLogo, 
+        category: 'React',
+        Title: 'Kasa',
+        Description: 'Créez une application web de location immobilière avec React',
         link: 'https://724events.com'
     },
-    {
-        logo: OhmyfoodLogo,
-        category: 'CSS',
-        Description: 'Ohmyfood',
-        link: 'https://appbancaire.com'
-    }
+
 ];
 
 export default projectsData;
