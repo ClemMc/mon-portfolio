@@ -16,18 +16,21 @@
             width: 100px;
         }
     }
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+          a {
+              margin: 0 1rem;
+              text-decoration: none;
+              font-weight: bold;
+              color: $tertiary-color;
 
-    nav {
-        a {
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-            color: $tertiary-color;
-
-            &:hover {
-                color: $secondary-color;
-            }
-        }
+              &:hover {
+                  color: $secondary-color;
+              }
+          }
+      }
     }
 
     @media (max-width: 730px) {

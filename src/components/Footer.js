@@ -4,15 +4,12 @@ const Footer = () => {
     return (
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-section brand">
-            <h2>Clément Metral</h2>
-          </div>
           <div className="footer-section menu">
             <h3>Menu</h3>
             <ul>
-              <li><a href="/about">À propos</a></li>
-              <li><a href="/projects">Projets</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="#home">À propos</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
