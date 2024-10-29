@@ -2,11 +2,10 @@ import React from 'react';
 import '../styles/home.scss';
 import Banner from '../components/Banner';
 import oim from '../assets/oim.webp';
-import Card from '../components/Card';
-import Data from '../components/Data';
 import '../styles/projects.scss';
 import '../styles/home.scss';
 import ContactForm from '../pages/Contact';
+import ProjectsPage from '../pages/Projects';
 import '../styles/contact.scss';
 
 const Home = () => {
@@ -32,29 +31,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="portfolio">
-        <div className="header-continuity">
-            <h1>Portfolio</h1>
-            <h2 className="subtitle">Projet réaliser lors de ma formation</h2>
-        </div>
-        <div>
-            <div className="projects-page">
-              <div className="card-container">
-                {Data.map((project, index) => (
-                    <Card 
-                        key={index} 
-                        logo={project.logo} 
-                        category={project.category} 
-                        Description={project.Description} 
-                        link={project.link} 
-                    />
-                ))}
-              </div>
-            </div>
-          </div>
+      <section>
+        <ProjectsPage />
       </section>
         
-      <section className="contact-section">
+      <section>
         <ContactForm />
       </section>
     </>

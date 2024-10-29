@@ -1,48 +1,70 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-.contact-section {
-    background-color: $background-color;
-  
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-  
-      label {
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-      }
-  
-      input, textarea {
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-  
-      button {
-        width: 10%;
-        padding: 0.7rem;
-        background-color: $secondary-color;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #f62c0d;
-        }
-        @media (max-width: 480px) {
-            width: 50%;
-        }
-      }
-    }
-  }
 #contact {
-    padding: 2rem;
+
+    .header-continuity {
+        text-align: center;
+    }
+
+    .form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-section {
+        background-color: $background-color;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 100%;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+
+            label {
+                flex: 1 1 100%;
+                display: flex;
+                flex-direction: column;
+                font-weight: bold;
+
+                input, textarea {
+                    padding: 0.5rem;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-top: 0.5rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            button {
+                align-self: center;
+                padding: 0.5rem 1.5rem;
+                background-color: $secondary-color;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-top: 1rem;
+
+                &:hover {
+                    background-color: darken($secondary-color, 10%);
+                }
+
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
