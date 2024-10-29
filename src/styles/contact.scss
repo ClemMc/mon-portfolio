@@ -37,6 +37,9 @@
         &:hover {
           background-color: #f62c0d;
         }
+        @media (max-width: 480px) {
+            width: 50%;
+        }
       }
     }
   }
