@@ -23,14 +23,14 @@ const projectsData = [
         category: 'Javascript',
         Title: 'Sophie Bluel',
         Description: 'Créez une page web dynamique avec JavaScript',
-        link: 'https://724events.com'
+        link: 'https://sophiebluel.com'
     },
     {
         logo: KasaLogo, 
         category: 'React',
         Title: 'Kasa',
         Description: 'Créez une application web de location immobilière avec React',
-        link: 'https://724events.com'
+        link: 'https://kasa.com'
     },
 
 ];
