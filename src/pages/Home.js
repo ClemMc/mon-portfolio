@@ -2,11 +2,8 @@ import React from 'react';
 import '../styles/home.scss';
 import Banner from '../components/Banner';
 import oim from '../assets/oim.webp';
-import '../styles/projects.scss';
-import '../styles/home.scss';
 import ContactForm from '../pages/Contact';
 import ProjectsPage from '../pages/Projects';
-import '../styles/contact.scss';
 
 const Home = () => {
   return (

@@ -2,17 +2,16 @@ import React from 'react';
 import Card from '../components/Card';
 import Data from '../components/Data';
 import '../styles/projects.scss';
-import '../styles/home.scss';
 
 const ProjectsPage = () => {
     return (
       <>
-        <section className="header-continuity">
-          <h1>Portfolio</h1>
+        <div className="header-continuity">
+          <h1 id= "projects">Portfolio</h1>
           <h2 className="subtitle">Projets réalisés lors de ma formation.</h2>
-        </section>
+        </div>
 
-        <section>
+        <div>
           <div className="projects-page">
             <div className="card-container">
             {Data.map((project, index) => (
@@ -27,7 +26,7 @@ const ProjectsPage = () => {
             ))}
             </div>
           </div>
-        </section>
+        </div>
       </>
     );
 };

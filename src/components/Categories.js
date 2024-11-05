@@ -18,7 +18,6 @@ const Categories = ({ selectedCategories }) => {
                 categoriesList[catKey] ? (
                     <div key={catKey} className="category">
                         <FontAwesomeIcon icon={categoriesList[catKey].icon} />
-                        <span>{categoriesList[catKey].name}</span>
                     </div>
                 ) : null
             )}
