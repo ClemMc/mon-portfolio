@@ -1,0 +1,21 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.categories {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    gap: 5px;
+
+    .fa-icon, .svg-inline--fa {
+        font-size: 40px;
+        color: $secondary-color;
+    }
+}

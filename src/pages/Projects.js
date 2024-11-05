@@ -7,25 +7,24 @@ import '../styles/home.scss';
 const ProjectsPage = () => {
     return (
       <>
-        <section id="portfolio">
-          <div className="header-continuity">
-            <h2>Portfolio</h2>
-            <h3 className="subtitle">Projet réaliser lors de ma formation</h3>
-          </div>
+        <section className="header-continuity">
+          <h1>Portfolio</h1>
+          <h2 className="subtitle">Projets réalisés lors de ma formation.</h2>
+        </section>
 
-          <div id="portfolio">
-            <div className="projects-page">
-              <div className="card-container">
-                {Data.map((project, index) => (
-                    <Card 
-                        key={index} 
-                        logo={project.logo} 
-                        category={project.category} 
-                        Description={project.Description} 
-                        link={project.link} 
-                    />
-                ))}
-              </div>
+        <section>
+          <div className="projects-page">
+            <div className="card-container">
+            {Data.map((project, index) => (
+              <Card 
+                  key={index} 
+                  logo={project.logo} 
+                  category={project.category} 
+                  Description={project.Description} 
+                  link={project.link} 
+                  Title={project.Title}
+              />
+            ))}
             </div>
           </div>
         </section>

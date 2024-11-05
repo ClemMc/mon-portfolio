@@ -25,9 +25,9 @@ const Home = () => {
           />
           <div className="text">
             <h3>Qui suis-je ?</h3>
-            <p>Jeune développeur web en formation, passionné par la création de sites et d'applications. 
-              J'ai appris à utiliser HTML, CSS, JavaScript et React, et je suis actuellement en train de travailler sur un projet 
-              de portfolio.</p>
+            <p>Je suis en reconversion professionnelle dans le développement web. J'ai suivi une formation axée sur les technologies front-end, 
+              où j'ai acquis des compétences solides en HTML, CSS, Sass, et JavaScript. J'ai également appris à utiliser des frameworks modernes comme React, ainsi que des 
+              outils professionnels tels que VS Code pour optimiser mon flux de travail.</p> 
           </div>
         </div>
       </section>

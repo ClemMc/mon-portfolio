@@ -1,0 +1,52 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.skills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .skill-circle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    .circle-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+
+      .logo-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .skill-text {
+      font-size: 18px;
+      color: #333;
+    }
+  }
+}
